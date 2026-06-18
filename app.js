@@ -4,7 +4,7 @@ const COLOR_SCHEMES = {
   C: { pageBg: "#FFF6EC", sectionBg: "#dec6ac", surface: "#FFFFFF", surfaceAlt: "#FFE8D1", text: "#24140C", textSoft: "#6D5142", dark: "#1A0D07", accent: "#E8894A", accentStrong: "#A6532F", border: "rgba(36,20,12,.14)" }
 };
 
-const ACTIVE_COLOR_SCHEME = "A";
+const ACTIVE_COLOR_SCHEME = "C";
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 function applyColorScheme() {
