@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nadin Huber Innenarchitektur | Core Design Prototype V1.6</title>
+    <meta name="description" content="Reduzierter Design-Prototyp mit Kernlayout und horizontalem Scrollbereich.">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="logo" href="#hero" aria-label="Nadin Huber Innenarchitektur">
+          <img src="logo.png" alt="Nadin Huber Innenarchitektur">
+        </a>
+
+        <!-- WordPress: wp_nav_menu kann diese Navigation spaeter ersetzen. -->
+        <nav class="main-nav" aria-label="Hauptnavigation">
+          <a href="#ansatz">Ansatz</a>
+          <a href="#traeume">tRäume</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <a class="btn btn-dark" href="#kontakt">Kennenlernen</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span class="sr-only">Menü öffnen</span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobile-menu" data-mobile-menu hidden aria-label="Mobile Navigation">
+        <a href="#ansatz">Ansatz</a>
+        <a href="#traeume">tRäume</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Innenarchitektur</p>
+            <h1>Dein tRaum zum Ankommen.</h1>
+            <p>Dein Ambiente für dein Vorhaben. Dein Umfeld für Erfolg.</p>
+          </div>
+          <figure class="hero-card">
+            <img src="Placeholder.img" alt="Platzhalter für Interior-Mood">
+            <figcaption>Warm. Klar. Persönlich.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="core-strip" id="ansatz">
+        <div class="container core-grid">
+          <article>
+            <span>01</span>
+            <h2>Ansatz</h2>
+            <p>Raumgefühl, Funktion und Material in einem ruhigen System.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h2>Planung</h2>
+            <p>Klare Entscheidungen, sichtbare Varianten, präzise Details.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h2>Umsetzung</h2>
+            <p>Ein roter Faden vom ersten Gespräch bis zum fertigen Raum.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="horizontal-shell" id="traeume" data-horizontal-section>
+        <div class="horizontal-sticky">
+          <div class="container horizontal-head">
+            <p class="kicker">tRäume</p>
+            <h2>Welche tRäume lassen wir wahr werden?</h2>
+            <div class="scroll-progress" aria-hidden="true">
+              <span data-horizontal-progress></span>
+            </div>
+          </div>
+
+          <div class="horizontal-viewport" data-horizontal-viewport>
+            <div class="horizontal-track" data-horizontal-track data-card-accordion>
+              <article class="question-card">
+                <button type="button" aria-expanded="false">
+                  <span>01</span>
+                  <h3>Wie bereite ich mich auf deinen Besuch vor?</h3>
+                </button>
+                <div class="card-answer" hidden>
+                  <p><strong>Gar nicht.</strong></p>
+                  <p>Wir gehen den Weg zu deinem Wohn(t)raum gemeinsam. Der erste Schritt ist ein ausführliches Gespräch bei dir, bei dem ich dir viele Fragen stelle und viel zuhöre.</p>
+                  <p>Ich lerne deine Prioritäten, deine Gewohnheiten und deine Zukunftspläne ausgiebig kennen. Gemeinsam finden wir heraus, wo der Weg hingehen soll.</p>
+                </div>
+              </article>
+              <article class="question-card">
+                <button type="button" aria-expanded="false">
+                  <span>02</span>
+                  <h3>Muss ich vorher aufräumen?</h3>
+                </button>
+                <div class="card-answer" hidden>
+                  <p><strong>Nein, musst du nicht.</strong></p>
+                  <p>Räume, die zeigen, wie sie sind und wie in ihnen gelebt wird, zeigen mir auch, was du brauchst. Was wir räumlich und „möbelig“ verbessern können.</p>
+                </div>
+              </article>
+              <article class="question-card image-card">
+                <img src="Placeholder.img" alt="">
+                <button type="button" aria-expanded="false">
+                  <span>03</span>
+                  <h3>Kann ich eigene Wünsche einbringen?</h3>
+                </button>
+                <div class="card-answer" hidden>
+                  <p><strong>Unbedingt!</strong></p>
+                  <p>Deine Wünsche und Bedürfnisse sind das Fundament unserer Planung.</p>
+                  <p>Du bist dir nicht sicher, was du eigentlich willst oder wohin die Reise gehen soll? Genau dafür ist unser Kennenlernen da. Dabei besprechen wir deine individuellen Raumbedürfnisse und finden deine Wohlfühlfaktoren heraus.</p>
+                </div>
+              </article>
+              <article class="question-card">
+                <button type="button" aria-expanded="false">
+                  <span>04</span>
+                  <h3>Wer baut's?</h3>
+                </button>
+                <div class="card-answer" hidden>
+                  <p>Ich kann bei Bedarf auf mein zuverlässiges Netzwerk aus Fachplanern und Firmen zurückgreifen.</p>
+                  <p>Ebenso gerne setze ich dein Projekt mit den Handwerkern und Fachplanern deines Vertrauens um.</p>
+                </div>
+              </article>
+              <article class="question-card">
+                <button type="button" aria-expanded="false">
+                  <span>05</span>
+                  <h3>Wann ist der richtige Zeitpunkt?</h3>
+                </button>
+                <div class="card-answer" hidden>
+                  <p><strong>Genau jetzt.</strong></p>
+                  <p>Ich kann immer in dein Projekt einsteigen, egal in welcher Phase du dich befindest. Egal, ob du noch auf der Suche nach der richtigen Immobilie bist, gerade mitten im Umbau steckst oder ein Neubau ansteht.</p>
+                  <p>Je früher wir beginnen, desto entspannter wird es für dich mit mir als erfahrenem Planungspartner an deiner Seite.</p>
+                </div>
+              </article>
+              <article class="question-card image-card">
+                <img src="Placeholder.img" alt="">
+                <button type="button" aria-expanded="false">
+                  <span>06</span>
+                  <h3>Können die Planungskosten plötzlich explodieren?</h3>
+                </button>
+                <div class="card-answer" hidden>
+                  <p><strong>Nein.</strong></p>
+                  <p>Ich kalkuliere meine Stunden mit Puffer, der unvorhersehbare Änderungen berücksichtigt. Budgetabweichungen sind selten und kündige ich frühzeitig an, so dass wir dafür eine Lösung finden werden.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-panel" id="kontakt">
+        <div class="container contact-inner">
+          <!-- Größer machen-->
+          <h3 class="kicker">Kontakt</h3>
+          <h4>Phone:</h4>
+          <h4>Mail:</h4>
+          <h4>...</h4>
+          <!-- kann dann später durch Wpress ersetzt werden -->
+          <a class="btn btn-dark" href="mailto:hallo@example.com">Kennenlernen</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span data-year></span> Nadin Huber Innenarchitektur</span>
+        <!-- WordPress: theme.json colors, Gutenberg/template parts und WP_Query fuer Aktuell koennen spaeter integriert werden. -->
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
